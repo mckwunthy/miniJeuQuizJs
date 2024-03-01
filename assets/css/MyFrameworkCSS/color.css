@@ -1,0 +1,13 @@
+:root {
+    --main-color: rgb(37, 7, 102);
+    --main-color-blue: rgb(127, 127, 217);
+    --main-color-teal: teal;
+    --main-color-white: white;
+    --main-color-black: #1d1d1d;
+    --main-color-gray: gray;
+    --main-color-green: rgb(75, 217, 75);
+    --main-color-red: red;
+    --main-color-gold: gold;
+    --main-color-orangered: orangered;
+    --main-color-orangeee: rgb(232, 105, 58);
+}

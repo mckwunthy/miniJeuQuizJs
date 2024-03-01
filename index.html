@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jeu de quiz</title>
+		<link rel="stylesheet" href="/assets/css/main.css">
+	</head>
+	<body>
+		<div id="app">
+			<div class="warning relative flex flex-column aic jcc kode-mono-uniquifier absolute">
+				<p>
+					Bienvenue ! Lisez avant de commencer.
+					<br>
+					Le quiz est composé de 11 questions portant sur le sujet : culture générale. Vous disposez de 22 secondes par question. Cliquez sur la (ou les) bonne(s) reponse(s) pour la (les) selectionner ou déselectionner puis validez avant la fin du temps. A la fin du temps vos reponses sont auto-validées. La corrections est ensuite affichée (les bonnes en vertes, les mauvaises en rouge). Appuyez sur suivant pour passer à la question suivante.	Une bonne reponse vous donne 1 point, une mauvais -1 point
+					<br><span>Vous etes prêt ? cliquez sur commencer .</span>
+				</p>
+
+				<div class="screen-shot"><img src="/assets/images/iillustration-1.png" alt="illustration 1"></div>
+				<div class="screen-shot"><img src="/assets/images/iillustration-2.png" alt="illustration 1"></div>
+				<div id="begin">commencer</div>
+			</div>
+			<div class="end-game absolute flex jcc aic flex-column none">
+				<p>
+					C'est la fin du quize, vous avez obtenue 10 points / 22
+				</p>
+				<div class="restart">Reprendre</div>
+			</div>
+			<h1>Jeu de Quiz : culture générale</h1>
+			<div class="container relative kode-mono-uniquifier">
+				<div class="quiz-resume absolute flex flex-column aic gap-20">
+					<div class="score-global">score<br>
+						100</div>
+					<div class="score-current">points<br>
+						10</div>
+					<div class="timer flex aic jcc gap-10">
+						<i class="fa-solid fa-hourglass-half"></i>
+						<div class="timerCount">20 s</div>
+					</div>
+				</div>
+				<div class="quiz-contain relative">
+					<div class="quiz-title flex aic gap-5">
+						<div class="question-number flex aic jcc marg-10">1</div>
+						<div class="question-item flex-1 flex aic jcc">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore doloremque esse et cumque dolore sed architecto totam perspiciatis dicta deleniti quasi saepe eligendi minima, quos eius officia adipisci atque?
+						</div>
+					</div>
+					<div class="quiz-response flex aic jcc gap-10 wrap">
+						<div class="response">
+							<div class="response-letter">a</div>
+							<div class="response-item">bongouanou</div>
+						</div>
+						<div class="response">
+							<div class="response-letter">b</div>
+							<div class="response-item">adzope</div>
+						</div>
+						<div class="response">
+							<div class="response-letter">c</div>
+							<div class="response-item">abidjan</div>
+						</div>
+						<div class="response">
+							<div class="response-letter">d</div>
+							<div class="response-item">yamoussoukro</div>
+						</div>
+					</div>
+					<div class="bt-hider absolute none">bt hider</div>
+					<div class="submit absolute">valider</div>
+					<div class="submitSecond absolute">valider</div>
+					<div class="submitFird absolute">valider</div>
+					<div class="submitForth absolute">valider</div>
+					<div class="next absolute none">suivant</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/assets/js/main.js"></script>
+	</body>
+</html>

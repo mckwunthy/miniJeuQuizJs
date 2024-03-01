@@ -1,0 +1,409 @@
+#app {
+    width: 650px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    /* background-color: var(--main-color); */
+    color: var(--main-color-white);
+    padding-top: 30px;
+}
+
+#app h1 {
+    color: var(--main-color-white);
+    width: 500px;
+    text-align: center;
+    margin: 20px auto;
+    border-left: 5px ridge var(--main-color-gold);
+    border-top: 5px ridge var(--main-color-black);
+    border-right: 5px ridge var(--main-color-green);
+    border-bottom: 5px ridge var(--main-color-red);
+    background-color: var(--main-color);
+}
+
+/*********warning**********/
+.warning {
+    color: var(--main-color-black);
+    background-color: var(--main-color-white);
+    width: 700px;
+    height: 700px;
+    z-index: 999;
+    border: 5px solid var(--main-color);
+    font-weight: bold;
+}
+
+.warning p::first-line {
+    background-color: var(--main-color-red);
+    color: var(--main-color-gold);
+    font-size: 1.5rem;
+}
+
+.warning p span {
+    background-color: var(--main-color-red);
+    color: var(--main-color-gold);
+    font-size: 1.1rem;
+}
+
+.warning p {
+    z-index: 9;
+    font-size: 1.1rem;
+    margin-bottom: -80px;
+    padding: 10px;
+}
+
+.warning div:nth-child(2) {
+    transform: scale(0.7);
+}
+
+.warning div:nth-child(3) {
+    display: none;
+}
+
+#begin {
+    background-color: var(--main-color);
+    color: var(--main-color-gold);
+    padding: 10px;
+    margin-top: -30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    animation: shine 1000ms linear infinite;
+}
+
+@keyframes shine {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/******end-game *******/
+.end-game {
+    color: var(--main-color-black);
+    background-color: var(--main-color-white);
+    width: 700px;
+    height: 700px;
+    z-index: 999;
+    border: 5px solid var(--main-color);
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.end-game p {
+    background-color: var(--main-color);
+    padding: 20px;
+    color: var(--main-color-white);
+    text-transform: uppercase;
+}
+
+.end-game .restart {
+    background-color: var(--main-color-green);
+    padding: 20px;
+    color: var(--main-color-black);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*********CONTAINER**********/
+.container {
+    background-color: var(--main-color);
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/*********quiz-resume**********/
+
+.quiz-resume {
+    top: 20px;
+    right: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.quiz-resume .timer {
+    border: 1px solid var(--main-color-white);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    /* padding: 10px; */
+}
+
+.quiz-resume .timer .timerCount {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*********quiz-contain quiz-title**********/
+.quiz-contain .quiz-title {
+    border: 8px ridge var(--main-color);
+    border-radius: 25px;
+    background-color: var(--main-color-black);
+    width: 500px;
+}
+
+
+.quiz-contain .quiz-title .question-number {
+    background-color: var(--main-color-white);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border-top: 5px ridge var(--main-color-black);
+    border-right: 5px ridge var(--main-color-green);
+    border-bottom: 5px ridge var(--main-color-red);
+    border-left: 5px ridge var(--main-color-gold);
+    animation: rotateQuestion 5s linear;
+}
+
+@keyframes rotateQuestion {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.quiz-contain .quiz-title .question-item {
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    padding: 8px 8px 8px 0;
+}
+
+.quiz-contain .quiz-title .question-item::first-letter {
+    text-transform: capitalize;
+}
+
+/*********quiz-response**********/
+.quiz-response {
+    margin-left: 5px;
+    width: 500px;
+    /* border: 1px solid #eee; */
+    text-align: center;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.response {
+    width: 200px;
+    height: 60px;
+    flex-grow: 1;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--main-color-blue);
+    border-radius: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.response-letter {
+    text-transform: uppercase;
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 20px;
+    height: 30px;
+    border-radius: 50px;
+    border: 3px inset var(--main-color);
+    /* border-top: 5px ridge var(--main-color-black);
+    border-right: 5px ridge var(--main-color-green);
+    border-bottom: 5px ridge var(--main-color-red);
+    border-left: 5px ridge var(--main-color-gold); */
+    animation: rotateQuestion 5s linear;
+}
+
+
+.response-item::first-letter {
+    text-transform: capitalize;
+}
+
+.response-item {
+    flex-grow: 1;
+}
+
+/*********submit**********/
+.submit,
+.next,
+.submitSecond,
+.submitFird,
+.submitForth {
+    background-color: var(--main-color-black);
+    width: 90px;
+    right: 25px;
+    bottom: 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color-blue);
+    text-transform: capitalize;
+    font-weight: bold;
+    box-shadow: 1px 2px 1px var(--main-color-white),
+        -1px -2px 1px var(--main-color-white);
+    cursor: pointer;
+}
+
+.submit,
+.next {
+    z-index: 99;
+}
+
+.submitSecond {
+    z-index: 9;
+}
+
+.submitFird {
+    z-index: 8;
+}
+
+.submitForth {
+    z-index: 7;
+}
+
+.bt-hider {
+    bottom: -10px;
+    right: 15px;
+    /* border: 1px solid #eee; */
+    height: 60px;
+    width: 120px;
+    z-index: 99999;
+    /* background-color: red; */
+}
+
+/*********MEDIA**********/
+@media screen and (max-width: 650PX) {
+    #app {
+        width: 400px;
+    }
+
+    #app h1 {
+        width: 300px;
+    }
+
+    .quiz-contain .quiz-title {
+        width: 365px;
+        height: 200px;
+
+    }
+
+    .quiz-resume {
+        top: 250px;
+        right: 80px;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .quiz-contain .quiz-title .question-number {
+        font-size: 1.1rem;
+        width: 20px;
+        height: 20px;
+    }
+
+    .quiz-response {
+        width: 350px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .submit,
+    .next,
+    .submitSecond,
+    .submitFird,
+    .submitForth {
+        width: 120px;
+        right: 40px;
+        bottom: -55px;
+    }
+
+    .bt-hider {
+        bottom: -70px;
+        right: 35px;
+        /* border: 1px solid #eee; */
+        height: 60px;
+        width: 150px;
+        z-index: 99999;
+        /* background-color: red; */
+    }
+
+    /*******warning******/
+    .warning {
+        width: 500px;
+        height: 900px;
+    }
+
+    .warning p::first-line {
+        font-size: 1.3rem;
+    }
+
+    .warning p {
+        font-size: 1.1rem;
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+    .warning div:nth-child(2) {
+        display: none;
+    }
+
+    .warning div:nth-child(3) {
+        transform: scale(0.7);
+        display: block;
+        margin-top: -50px;
+    }
+
+    #begin {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    /***end game***/
+    .end-game {
+        width: 400px;
+        height: 900px;
+    }
+
+    /***end game***/
+
+}
+
+/*********XXXX**********/
+/*********XXXX**********/
+/*
+
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 427px) {
+
+}*/

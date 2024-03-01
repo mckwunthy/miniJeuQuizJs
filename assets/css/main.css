@@ -1,0 +1,13 @@
+/*inserer lien fontawesone*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+/*inserer google font*/
+@import url(https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap);
+
+/*inserer framwork*/
+@import url(/assets/css/MyFrameworkCSS/framework.css);
+@import url(/assets/css/MyFrameworkCSS/color.css);
+@import url(/assets/css/MyFrameworkCSS/size.css);
+
+/*inserer style*/
+@import url(/assets/css/style.css);
